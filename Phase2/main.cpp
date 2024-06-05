@@ -1,4 +1,4 @@
-#include "DoublyNode.h"
+#include "Node.h"
 #include "Doubly.h"
 #include "cstdlib"
 #include <iostream>
@@ -6,7 +6,6 @@ using namespace std;
 
 int main()
 {
-
     srand(42);
     DoublyLList List;
 
