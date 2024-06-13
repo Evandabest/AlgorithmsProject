@@ -6,10 +6,10 @@
 class Node
 {
 public:
+    Node(int val) : data(val), next(NULL), prev(NULL) {}
     int data;
     Node *next;
     Node *prev;
-    Node(int val) : data(val), next(NULL), prev(NULL) {}
 };
 
 #endif // NODE_H

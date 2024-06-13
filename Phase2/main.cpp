@@ -56,7 +56,7 @@ int main()
         else if (Option == 3)
         {
             cout << "Option #3 is Reverse List Printout: ";
-            List.PintReverse();
+            List.PrintReverse();
             cout << "\n"
                  << "Select another option from the menu: ";
         }

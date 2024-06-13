@@ -44,7 +44,7 @@ public:
         cout << endl;
     }
 
-    void PintReverse()
+    void PrintReverse()
     {
 
         Node *tempo = tail;
