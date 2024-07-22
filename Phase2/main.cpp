@@ -6,7 +6,9 @@ using namespace std;
 
 int main()
 {
-    srand(42);
+    // Remove the invalid function call
+    time_t currentTime = time(nullptr);
+    srand(static_cast<unsigned int>(currentTime));
     DoublyLList List;
 
     for (int i = 0; i <= 14; i++)
@@ -67,7 +69,7 @@ int main()
         }
         else
         {
-            cout << "  - Invalid Input, Try again later.";
+            cout << "  - Invalid Input, Try again.";
             break;
         }
     }

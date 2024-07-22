@@ -54,7 +54,7 @@ void generateRandomIntegers(vector<int> &arr)
 {
     srand(static_cast<unsigned int>(time(0))); // Seed the random number generator with the current time
 
-    for (int i = 0; i < 30; ++i)
+    for (int i = 0; i < 300000; ++i)
     {
         int randomNumber = rand() % 10001; // Generate a random number in the range [0, 10000]
         arr.push_back(randomNumber);       // Append the random number to the vector

@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/sahafkhan/Desktop/AlgorithmsProject/Phase4",
-      "program": "/Users/sahafkhan/Desktop/AlgorithmsProject/Phase4/build/Debug/outDebug"
+      "cwd": "/Users/evandabest/School/AlgorithmsProject/Phase3",
+      "program": "/Users/evandabest/School/AlgorithmsProject/Phase3/build/Debug/outDebug"
     }
   ]
 }
