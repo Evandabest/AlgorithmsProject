@@ -1,18 +1,19 @@
 #include <iostream>
 #include <vector>
-#include <cstdlib>   // For srand and rand
-#include <ctime>     // For time
-#include <chrono>    // For chrono timing
-#include "sorts.h"   
+#include <cstdlib> // For srand and rand
+#include <ctime>   // For time
+#include <chrono>  // For chrono timing
+#include "sorts.h"
 
 using namespace std;
 
-void generateRandomIntegers(vector<int>& arr);
+void generateRandomIntegers(vector<int> &arr);
 template <typename F>
-double measurePerformance(F sortFunction, vector<int>& data);
+double measurePerformance(F sortFunction, vector<int> &data);
 void reverseVector(vector<int> arr);
 
-int main() {
+int main()
+{
     vector<int> arr;
     generateRandomIntegers(arr);
 
@@ -49,12 +50,14 @@ int main() {
     return 0;
 }
 
-void generateRandomIntegers(vector<int>& arr) {
+void generateRandomIntegers(vector<int> &arr)
+{
     srand(static_cast<unsigned int>(time(0))); // Seed the random number generator with the current time
 
-    for (int i = 0; i < 30; ++i) {
+    for (int i = 0; i < 30; ++i)
+    {
         int randomNumber = rand() % 10001; // Generate a random number in the range [0, 10000]
-        arr.push_back(randomNumber); // Append the random number to the vector
+        arr.push_back(randomNumber);       // Append the random number to the vector
     }
 }
 
@@ -63,7 +66,8 @@ void reverseVector(vector<int> arr)
     int start = 0;
     int end = arr.size() - 1;
 
-    while (start < end) {
+    while (start < end)
+    {
         // Swap elements at start and end indices
         int temp = arr[start];
         arr[start] = arr[end];
@@ -76,13 +80,11 @@ void reverseVector(vector<int> arr)
 }
 
 template <typename F>
-double measurePerformance(F sortFunction, vector<int>& data) {
+double measurePerformance(F sortFunction, vector<int> &data)
+{
     auto start = chrono::high_resolution_clock::now();
     sortFunction(data);
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
     return duration.count();
 }
-
-
-
