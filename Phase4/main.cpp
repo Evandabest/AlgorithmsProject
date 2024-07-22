@@ -31,7 +31,7 @@ int main()
     double bubbleSortTimeReverse = measurePerformance(bubbleSort, reversed);
     cout << "Time taken by bubbleSort in reversed order: " << bubbleSortTimeReverse << " seconds" << endl;
 
-    // Example usage of measurePerformance with quickSort (assuming it's implemented in sorts.h)
+    // Example usage of measurePerformance with quickSort
     double quickSortTimeRandom = measurePerformance(quicksortStarter, arr);
     cout << "Time taken by quickSort in random order: " << quickSortTimeRandom << " seconds" << endl;
     double quickSortTimeSorted = measurePerformance(quicksortStarter, sorted);
@@ -39,7 +39,7 @@ int main()
     double quickSortTimeReversed = measurePerformance(quicksortStarter, reversed);
     cout << "Time taken by quickSort in reversed order: " << quickSortTimeReversed << " seconds" << endl;
 
-    // Example usage of measurePerformance with mergeSort (assuming it's implemented in sorts.h)
+    // Example usage of measurePerformance with mergeSort
     double mergeSortTimeRandom = measurePerformance(mergeSortStarter, arr);
     cout << "Time taken by mergeSort in random order: " << mergeSortTimeRandom << " seconds" << endl;
     double mergeSortTimeSorted = measurePerformance(mergeSortStarter, sorted);
@@ -54,7 +54,7 @@ void generateRandomIntegers(vector<int> &arr)
 {
     srand(static_cast<unsigned int>(time(0))); // Seed the random number generator with the current time
 
-    for (int i = 0; i < 300000; ++i)
+    for (int i = 0; i < 10000; ++i)
     {
         int randomNumber = rand() % 10001; // Generate a random number in the range [0, 10000]
         arr.push_back(randomNumber);       // Append the random number to the vector

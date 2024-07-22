@@ -86,6 +86,14 @@ int main()
             newTree.postorder(newTree.root);
             cout << endl;
         }
+        else if (option == 8)
+        {
+            cout << "Exiting..." << endl;
+        }
+        else
+        {
+            cout << "Invalid option." << endl;
+        }
     }
 
     return 0;
